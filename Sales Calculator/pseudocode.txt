@@ -1,0 +1,38 @@
+void get_totals(int[][7], int, int)
+
+Parameters: month_data, the number of months, the number of individual items 
+Create a file named Total_sales to be edited
+Loops through each individual item 
+Create variable to store the total number of transactions for the given item over the number of months
+Loop through each month
+Add the tally in month_data for the given month to the variable storing the total number of transactions
+Print out the item id and the total number of transactions
+close the file
+
+
+void get_profits(int[][7], int, int, float[][2])
+
+same implementation as get_totals to print out the item id and number of transactions
+print out the header for sales, cost, and revenue
+set a variable for sales equal to the current tally * the sales cost of the item
+set a variable for cost equal to the current tally * the production cost of each Item
+set a variable for revenue equal to the current tally * (sales cost - production cost)
+print out the item id, the total number of transactions, and the previously mentioned variables
+close the file
+
+
+void top_earner(int[][7], int, int, float[][2])
+
+Create a file named "Top_earners.txt" to be edited
+Print out the header
+Initialize variables for count, current best, the id/num sales of the best, and an array for the revenue of each Item
+Use the same implementation as the previous functions to find the revenue of each item and add them to the array
+Loop through the array of revenues 
+if a value is greater than the current best, set the current best to that value
+set the best id equal to the items id number
+set the num sales equal to the total number of transactions
+print out the id, num sales, and current best with proper spacing
+set the current best to zero
+set the value in the array equal to zero
+increment the count by 1, repeating until it hits 10
+close the file
